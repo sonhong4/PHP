@@ -17,7 +17,7 @@ $result = mysqli_query($conn, $sql);
 $r = mysqli_fetch_assoc($result);
 ?>
     <div class="form_input">
-        <div class="overlay"></div>
+        <div class="overlay" style="bottom:-50.5%"></div>
         <div class="form_body">
             <a href="Form_ShowSP.php"><img class="close_image" src="../image_common/close.jpg" /></a>
             <form method="post" enctype="multipart/form-data" action="Update.php?id=<?=$ma?>">

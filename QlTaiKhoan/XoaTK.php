@@ -16,7 +16,7 @@
     $id=$_GET['id'];
     $sql = "DELETE FROM taikhoan WHERE Id = $id";
 	mysqli_query($con,$sql);
-	header("Location: http://localhost/Baitap/BTL/QLTaiKhoan.php");
+	header("Location: ../GdAdmin/index.php");
 ?>
 </body>
 </html>

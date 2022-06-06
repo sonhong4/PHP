@@ -67,13 +67,6 @@
             document.location = delUrl;
         }
     }
-
-    // function xacnhan(url){
-    //         if(confirm("Ban co muon xoa khong?")){
-    //             document.location=url;
-    //         }
-    //     }
-
 </script>
 
 </html>

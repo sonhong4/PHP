@@ -5,19 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        table{
-            border-collapse: collapse;
-        }
-        button{
-            margin-left: 10px;
-        }
-        td,th{
-            min-width: 100px;
-            text-align: justify;
-            border: 1px solid black;
-        }
-    </style>
+    <link rel="stylesheet" href="../QlTaiKhoan/style.css" />
 </head>
 <body>
         
@@ -36,9 +24,10 @@
            $sql="SELECT * FROM taikhoan";
            $re=mysqli_query($con,$sql);
            echo '<form  method="POST">';
-           echo"<table>";
+           echo'<table class="table">';
+           echo '<caption class="table_caption">Bảng quản lý tài khoản</caption>';
             //    tao tieu de
-            echo"<tr>";
+            echo`<tr class="table_row">`;
             echo"<th>";
             echo "MaKH";
             echo" </th>";
@@ -60,7 +49,7 @@
            while($db=mysqli_fetch_row($res)){
            
             // ban du lieu
-               echo"<tr>";
+               echo'<tr class="table_row">';
                echo"<td>";
                echo $db[0];
                echo" </td>";
@@ -77,21 +66,14 @@
                echo $db[4];
                echo'</td>';
                ?>
-               <td><a  href="javascript:xacnhan('XoaTK.php?id=<?=$db[0]?>')">Xóa</a></td>';
-               </tr>";
+               <td><a class="btn-delete" href="javascript:confirmDelete('../QlTaiKhoan/XoaTK.php?id=<?=$db[0]?>')">Xóa</a></td>
+               </tr>
                <?php
            }
-          
+  
            echo"</table>";
           
         }
         ?>
-    <script>
-        function xacnhan(url){
-            if(confirm("Ban co muon xoa khong?")){
-                document.location=url;
-            }
-        }
-    </script>
 </body>
 </html>
