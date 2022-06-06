@@ -30,7 +30,7 @@
                     $sql = "update sanpham set name='$name', type = '$type', brand = '$brand', price='$price', quantity='$quantity', description='$description' where id = '$ma'";
                 }
                 mysqli_query($conn, $sql);
-                echo "<script>setTimeout(\"location.href = 'Form_ShowSP.php';\",5);</script>";
+                echo "<script>setTimeout(\"location.href = '../GdAdmin/index.php';\",5);</script>";
                 echo "<script>alert('Cập nhật thành công.')</script>";
             }
         }

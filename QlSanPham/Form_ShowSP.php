@@ -1,18 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./Form_ShowSP.css" />
-    <title>Document</title>
-</head>
-
-<body>
+<link rel="stylesheet" href="../QlSanPham/Form_ShowSP.css" />
     <div class="product_table">
         <div>
-            <a href="Form_NhapSP.html">
+            <a href="../QlSanPham/Form_NhapSP.html">
                 <button class="add_btn">Thêm sản phẩm</button>
             </a>
         </div>
@@ -47,27 +37,21 @@
                     <img src=<?=$r['image']?> />
                 </td>
                 <td>
-                    <a href="Form_UpdateSP.php?id=<?=$r['id']?>">
+                    <a href="../QlSanPham/Form_UpdateSP.php?id=<?=$r['id']?>">
                         <button>Sửa</button>
                     </a>
-                    <a href="javascript:confirmDelete('Form_DeleteSP.php?id=<?=$r['id']?>')">
+                    <a href="javascript:confirmDelete('../QlSanPham/Form_DeleteSP.php?id=<?=$r['id']?>')">
                         <button>Xóa</button>
                     </a>
                 </td>
             </tr>
 <?php
     }
-?>
-            
+?>         
         </table>
     </div>
-    <script>
-        function confirmDelete(delUrl) {
-            if (confirm("Bạn chắc chắn muốn xóa sản phẩm này?")) {
-                document.location = delUrl;
-            }
-        }
-    </script>
-</body>
-
-</html>
+  
+   
+    
+    
+   

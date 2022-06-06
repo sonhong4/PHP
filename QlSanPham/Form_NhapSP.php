@@ -14,7 +14,7 @@
         }
         $sql = "insert into sanpham (name, type, brand, image, price, quantity, description) values('$name', '$type', '$brand', '$file', '$price', '$quantity', '$description')";
         mysqli_query($conn, $sql);
-        echo "<script>setTimeout(\"location.href = 'Form_ShowSP.php?id=$ma';\",500);</script>";
+        echo "<script>setTimeout(\"location.href = '../GdAdmin/index.php?id=$ma';\",500);</script>";
         echo "<script>alert('Thêm thành công.')</script>";
     }
 ?>
