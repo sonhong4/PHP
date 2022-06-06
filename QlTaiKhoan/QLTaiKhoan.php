@@ -35,7 +35,6 @@
         else{
            $sql="SELECT * FROM taikhoan";
            $re=mysqli_query($con,$sql);
-           echo '<form  method="POST">';
            echo"<table>";
             //    tao tieu de
             echo"<tr>";
@@ -77,8 +76,8 @@
                echo $db[4];
                echo'</td>';
                ?>
-               <td><a  href="javascript:xacnhan('XoaTK.php?id=<?=$db[0]?>')">Xóa</a></td>';
-               </tr>";
+               <td><a  href="javascript:xacnhan('XoaTK.php?id=<?=$db[0]?>')">Xóa</a></td>
+               </tr>
                <?php
            }
           
