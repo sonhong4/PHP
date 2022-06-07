@@ -29,9 +29,16 @@ $r = mysqli_fetch_assoc($result);
                 <div class="form-group">
                     <label>Loại SP:</label>
                     <select name="type" class="form-control type_selection" >
-                        <option value="1" <?php echo $r["type"] == 1 ? "selected" : "" ?>>Kính râm</option>
-                        <option value="2" <?php echo $r["type"] == 2 ? "selected" : "" ?>>Kính cận</option>
-                        <option value="3" <?php echo $r["type"] == 3 ? "selected" : "" ?>>Kính thời trang</option>
+                    <?php
+                            include("Connect.php");
+                            $sql = "select * from loaisp";
+                            $re = mysqli_query($conn, $sql);
+                            while($r1 = mysqli_fetch_assoc($re)){
+                        ?>
+                                <option value="<?=$r1['id']?>"><?=$r1['name']?></option>
+                        <?php
+                            }
+                        ?>
                     </select>
                 </div>
                 <div class="form-group">
