@@ -1,9 +1,0 @@
-
-ten-name
-ma-id
-loai-type
-thuonghieu-brand
-anh-image
-gia-price
-soluong-quantity
-mota-describe
