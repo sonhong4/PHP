@@ -6,13 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../../QlSanPham/Form_NhapSP.css" />
-    <style>
-        input {
-            width: 100%;
-            margin: 10px 0;
-            padding: 5px;
-        }
-    </style>
 </head>
 <?php
     include("Connect.php");
